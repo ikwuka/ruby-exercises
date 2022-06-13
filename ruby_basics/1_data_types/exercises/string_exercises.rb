@@ -53,15 +53,29 @@ puts capitalize("cheek")          #=> Cheek
 puts capitalize("chick")          #=> Chick
 puts
 
+
 def uppercase(string)
   # uppercase all letters in the string
   string.upcase
 end
 
+# Some expressions to have a feel of the function
+puts uppercase("game")          #=> GAME
+puts uppercase("gain")          #=> GAIN
+puts uppercase("grain")         #=> GRAIN
+puts uppercase("green")         #=> GREEN
+puts uppercase("gym")           #=> GYM
+puts
+
+
 def downcase(string)
   # downcase all letters in the string
   string.downcase
 end
+
+# Some expressions to have a feel of the function
+
+
 
 def empty_string(string)
   # return true if the string is 
