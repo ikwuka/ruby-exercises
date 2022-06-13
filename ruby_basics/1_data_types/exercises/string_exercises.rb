@@ -91,6 +91,14 @@ def empty_string(string)
   end
 end
 
+# Some expressions to have a feel of the function
+puts empty_string("?")          #=> false
+puts empty_string("!")          #=> false
+puts empty_string("")           #=> true
+puts empty_string("")           #=> true
+puts empty_string("$")          #=> false
+puts
+
 def string_length(string)
   # return the length of the string
   string.length
