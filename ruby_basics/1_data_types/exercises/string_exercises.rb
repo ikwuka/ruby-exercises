@@ -120,7 +120,6 @@ def reverse(string)
 end
 
 # Some expressions to have a feel of the function
-
 puts reverse("Yellow")          #=> wolleY
 puts reverse("Pillow")          #=> wolliP
 puts reverse("Below")           #=> woleB
@@ -133,3 +132,18 @@ def space_remover(string)
   # remove all the spaces in the string using gsub
   string.gsub(" ", "")
 end
+
+# Some expressions to have a feel of the function
+puts space_remover("We are dancing")
+puts space_remover("I am programming")
+puts space_remover("They said, 'we love Ruby a lot!'")
+puts space_remover("We all are seeing how the technology industry is transforming lives,...")
+puts space_remover("changing, and saving mother planet, Earth!")
+puts
+
+#=> OUTPUTS
+# Wearedancing
+# Iamprogramming
+# Theysaid,'weloveRubyalot!'
+# Weallareseeinghowthetechnologyindustryistransforminglives,...
+# changing,andsavingmotherplanet,Earth!
