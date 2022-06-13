@@ -74,7 +74,12 @@ def downcase(string)
 end
 
 # Some expressions to have a feel of the function
-
+puts downcase("OhMy")           #=> ohmy
+puts downcase("WowWow")         #=> wowwow
+puts downcase("WohWoh")         #=> wohwoh
+puts downcase("ZigZAg")         #=> zigzag
+puts downcase("VumVam")         #=> vumvam
+puts
 
 
 def empty_string(string)
