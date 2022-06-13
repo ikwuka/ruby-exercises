@@ -99,10 +99,20 @@ puts empty_string("")           #=> true
 puts empty_string("$")          #=> false
 puts
 
+
 def string_length(string)
   # return the length of the string
   string.length
 end
+
+# Some expressions to have a feel of the function
+puts string_length("      ")              #=> 6
+puts string_length("Ruby")                #=> 4
+puts string_length("C++")                 #=> 3
+puts string_length("Dictionary")          #=> 10
+puts string_length("")                    #=> 0
+puts
+
 
 def reverse(string)
   # return the same string, with all of its characters reversed
