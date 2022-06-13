@@ -17,6 +17,15 @@ def concatenate(string)
   "Hello #{string}!"
 end
 
+# Some expressions to have a feel of the function
+puts concatenate("Dev World")             #=> Hello Dev World!
+puts concatenate("CySec World")           #=> Hello CySec World!
+puts concatenate("ML World")              #=> Hello ML World!
+puts concatenate("BC World")              #=> Hello BC World!
+puts concatenate("Real World!!")          #=> Hello Real World!!!
+puts
+
+
 def substrings(word)
   # return the first 4 letters from the word using substrings
   word[0...4]
