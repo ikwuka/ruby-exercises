@@ -119,6 +119,16 @@ def reverse(string)
   string.reverse
 end
 
+# Some expressions to have a feel of the function
+
+puts reverse("Yellow")          #=> wolleY
+puts reverse("Pillow")          #=> wolliP
+puts reverse("Below")           #=> woleB
+puts reverse("Wow-wow")         #=> wow-woW
+puts reverse("Mass")            #=> ssaM
+puts
+
+
 def space_remover(string)
   # remove all the spaces in the string using gsub
   string.gsub(" ", "")
