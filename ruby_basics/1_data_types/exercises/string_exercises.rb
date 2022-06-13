@@ -3,6 +3,15 @@ def concatenate_example(string)
   "Classic " << string
 end
 
+# Some expressions to have a feel of the function
+puts concatenate_example("Ruby")                  #=> Classic Ruby
+puts concatenate_example("Python")                #=> Classic Python
+puts concatenate_example("JavaScript")            #=> Classic JavaScript
+puts concatenate_example("TypeScript")            #=> Classic TypeScript
+puts concatenate_example("Technologies!")         #=> Classic Technologies!
+puts
+
+
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
   "Hello #{string}!"
