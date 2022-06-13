@@ -31,10 +31,23 @@ def substrings(word)
   word[0...4]
 end
 
+# Some expressions to have a feel of the function
+puts substrings("Foody")        #=> Food
+puts substrings("Goody")        #=> Good
+puts substrings("Hoody")        #=> Hood
+puts substrings("Moody")        #=> Mood
+puts substrings("Woody")        #=> Wood
+puts
+
+
 def capitalize(word)
   # capitalize the first letter of the word
   word.capitalize
 end
+
+# Some expressions to have a feel of the function
+
+
 
 def uppercase(string)
   # uppercase all letters in the string
