@@ -46,8 +46,12 @@ def capitalize(word)
 end
 
 # Some expressions to have a feel of the function
-
-
+puts capitalize("change")         #=> Change
+puts capitalize("chain")          #=> Chain
+puts capitalize("champ")          #=> Champ
+puts capitalize("cheek")          #=> Cheek
+puts capitalize("chick")          #=> Chick
+puts
 
 def uppercase(string)
   # uppercase all letters in the string
