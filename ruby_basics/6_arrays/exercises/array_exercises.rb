@@ -78,10 +78,16 @@ puts
 
 def remove_first_three_elements(array)
   # Step 1: remove the first three elements
-
+  p array.shift(3)
   # Step 2: return the array (because Step 1 returns the values of the elements removed)
   array
 end
+
+remove_first_three_elements(["V", "W", "X", "Y", "Z"])          #=> ["V", "W", "X"]
+remove_first_three_elements([100, 200, 300, 400, 500])          #=> [100, 200, 300]
+remove_first_three_elements([true, true, false, false])         #=> [true, true, false]
+remove_first_three_elements([["cell1"], ["cell2"]])             #=> [["cell1"], ["cell2"]]
+puts
 
 def array_concatenation(original, additional)
   # return an array adding the original and additional array together
