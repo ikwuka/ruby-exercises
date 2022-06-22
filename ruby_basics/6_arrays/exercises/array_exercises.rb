@@ -89,9 +89,20 @@ remove_first_three_elements([true, true, false, false])         #=> [true, true,
 remove_first_three_elements([["cell1"], ["cell2"]])             #=> [["cell1"], ["cell2"]]
 puts
 
+
 def array_concatenation(original, additional)
   # return an array adding the original and additional array together
+  p original.concat(additional)
+  # .........or .........
+  # p original + additional
 end
+
+array_concatenation([1, 2, 3], [4, 5, 6])                 #=> [1, 2, 3, 4, 5, 6]
+array_concatenation(["a","b", "c"], ["d"])                #=> ["a", "b", "c", "d"]
+array_concatenation([false], [true])                      #=> [false, true]
+array_concatenation([nil], ["value"])                     #=> [nil, "value"]
+puts
+
 
 def array_difference(original, comparison)
   # return an array of elements from the original array that are not in the comparison array
