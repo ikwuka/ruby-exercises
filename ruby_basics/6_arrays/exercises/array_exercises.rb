@@ -1,6 +1,15 @@
 def nil_array(number)
   # return an array containing `nil` the given number of times
+  p [nil] * number
 end
+
+# Test algorithm's excellence
+nil_array(5)            #=> [nil, nil, nil, nil, nil]
+nil_array(2)            #=> [nil, nil]
+nil_array(3)            #=> [nil, nil, nil]
+nil_array(7)            #=> [nil, nil, nil, nil, nil, nil, nil]
+puts
+
 
 def first_element(array)
   # return the first element of the array
