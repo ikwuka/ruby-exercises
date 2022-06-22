@@ -26,7 +26,15 @@ puts
 
 def third_element(array)
   # return the third element of the array
+  p array[2]
 end
+
+# Have a feel of the algorithm
+third_element(["Us", "We", "Some", "Few"])        #=> "Some"
+third_element([1, 2, 3, 4, 5])                    #=> 3
+third_element([" ", "&", "$", "£"])               #=> "$"
+third_element(["Thanks", "a lot"])                #=> nil
+puts
 
 def last_three_elements(array)
   # return the last 3 elements of the array
