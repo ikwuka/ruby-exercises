@@ -13,7 +13,16 @@ puts
 
 def first_element(array)
   # return the first element of the array
+  p array[0]
 end
+
+# Test algorithm's excellence
+first_element([7, 8, 9, 10, 11])                #=> 7
+first_element(["z", "y", "x", "w"])             #=> "z"
+first_element(["Challenges", "I", "love"])      #=> "Challenges"
+first_element(["A", "B", "C", "D", nil])        #=> "A"
+puts
+
 
 def third_element(array)
   # return the third element of the array
