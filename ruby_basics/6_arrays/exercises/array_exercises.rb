@@ -51,7 +51,15 @@ puts
 
 def add_element(array)
   # add an element (of any value) to the array
+  p array.push(["thank, you, Matz!"])
 end
+
+add_element(["We", "said", ])                 #=> ["We", "said", ["thank, you, Matz!"]]
+add_element(["She", "replied", ])             #=> ["She", "replied", ["thank, you, Matz!"]]
+add_element(["They", "screamed", ])           #=> ["They", "screamed", ["thank, you, Matz!"]]
+add_element(["I", "humbly", "said", ])        #=> ["I", "humbly", "said", ["thank, you, Matz!"]]
+puts
+
 
 def remove_last_element(array)
   # Step 1: remove the last element from the array
