@@ -36,9 +36,18 @@ third_element([" ", "&", "$", "£"])               #=> "$"
 third_element(["Thanks", "a lot"])                #=> nil
 puts
 
+
 def last_three_elements(array)
   # return the last 3 elements of the array
+  p array.last(3)
 end
+
+# Test algorithm manually
+last_three_elements([10, 20, 30, 40, 50, 60])               #=> [40, 50, 60]
+last_three_elements(["How", "Why", "Few", "Shy"])           #=> ["Why", "Few", "Shy"]
+last_three_elements([nil, true, false, false, true])        #=> [false, false, true]
+puts
+
 
 def add_element(array)
   # add an element (of any value) to the array
