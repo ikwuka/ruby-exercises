@@ -63,10 +63,18 @@ puts
 
 def remove_last_element(array)
   # Step 1: remove the last element from the array
-
+  p array.pop
   # Step 2: return the array (because Step 1 returns the value of the element removed)
   array
 end
+
+# Run function
+remove_last_element(["a", "b", "c", "d"])               #=> "d"
+remove_last_element([5, 10, 15, 20, 25])                #=> 25
+remove_last_element(["Loving Ruby!"])                   #=> "Loving Ruby!"
+remove_last_element(["sing", "song", "sang"])           #=> "sang"
+puts
+
 
 def remove_first_three_elements(array)
   # Step 1: remove the first three elements
