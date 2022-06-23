@@ -151,7 +151,16 @@ puts
 
 def array_length(array)
   # return the length of the array
+  p array.length
 end
+
+array_length([])                              #=> 0
+array_length([[[[[[]]]]]])                    #=> 1
+array_length([2, 2, 4, 4])                    #=> 4
+array_length(["c", "o", "o"])                 #=> 3
+array_length([3.3, 2.2, 1.1, 0.01])           #=> 4
+puts
+
 
 def include?(array, value)
   # return true if the array includes the value
