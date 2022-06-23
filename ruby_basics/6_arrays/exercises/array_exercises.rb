@@ -134,11 +134,20 @@ empty_array?([nil, true])                 #=> false
 empty_array?([" ", "-"])                  #=> false
 empty_array?([])                          #=> true
 empty_array?([[]])                        #=> false
+puts
 
 
 def reverse(array)
   # return the reverse of the array
+  p array.reverse
 end
+
+reverse([1, 2, 3, 4])                     #=> [4, 3, 2, 1]
+reverse(["z", "y", "x"])                  #=> ["x", "y", "z"]
+reverse(["A", "B", "C"])                  #=> ["C", "B", "A"]
+reverse([true, false])                    #=> [false, true]
+reverse([-2, -1, 0, 1, 2])                #=> [2, 1, 0, -1, -2]
+puts
 
 def array_length(array)
   # return the length of the array
