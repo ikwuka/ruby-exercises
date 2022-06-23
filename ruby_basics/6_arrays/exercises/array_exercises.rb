@@ -181,4 +181,10 @@ puts
 
 def join(array, separator)
   # return the result of joining the array with the separator
+  p array.join(separator)
 end
+
+join([2, 3, 4, 5], " ")                     #=> "2 3 4 5"
+join(["a", "b", "c"], " + ")                #=> "a + b + c"
+join([0.0, 1.0, 2.0], "% %")                #=> "0.0% %1.0% %2.0"
+join([true, false], nil)                    #=> "truefalse"
