@@ -122,7 +122,19 @@ puts
 
 def empty_array?(array)
   # return true if the array is empty
+  if array.empty? == true
+    p true
+  else
+    p false
+  end
 end
+
+empty_array?([3, 6, 9])                   #=> false
+empty_array?([nil, true])                 #=> false
+empty_array?([" ", "-"])                  #=> false
+empty_array?([])                          #=> true
+empty_array?([[]])                        #=> false
+
 
 def reverse(array)
   # return the reverse of the array
