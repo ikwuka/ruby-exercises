@@ -106,7 +106,19 @@ puts
 
 def array_difference(original, comparison)
   # return an array of elements from the original array that are not in the comparison array
+  p original.difference(comparison)
+  # .......... or ...........
+
+  # p original - comparison
 end
+
+array_difference([5, 6, 7], [3, 4, 5])                        #=> [6, 7]
+array_difference(["A", "E", "I"], ["O", "E"])                 #=> ["A", "I"]
+array_difference(["CH", "GB"], ["GH", "GW", "CH"])            #=> ["GB"]
+array_difference([], [nil, true])                             #=> []
+array_difference([0, 1, 1, 2, 3, 5], [0, 1, 2])               #=> [3, 5]
+puts
+
 
 def empty_array?(array)
   # return true if the array is empty
