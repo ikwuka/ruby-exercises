@@ -164,7 +164,20 @@ puts
 
 def include?(array, value)
   # return true if the array includes the value
+  if array.include?(value)
+    p true
+  else
+    p false
+  end
 end
+
+include?([2.5, 4.5, 6.5], 4.5)                  #=> true
+include?([0, 1, 2, 3, 4], 8)                    #=> false
+include?(["a", "b", "c"], "e")                  #=> false
+include?([-2, -3, -5], -3)                      #=> true
+include?(["#", "$", "£"], "£" )                 #=> true
+puts
+
 
 def join(array, separator)
   # return the result of joining the array with the separator
