@@ -4,7 +4,7 @@ require_relative '../exercises/hash_exercises'
 RSpec.describe 'Hash Exercises' do
   describe 'create favorite hash exercise' do
 
-    it 'returns result with a string and integer' do
+    xit 'returns result with a string and integer' do
       favorite = create_favorite_hash('blue', 65)
       result = { color: 'blue', number: 65 }
       expect(favorite).to eq(result)
@@ -123,14 +123,14 @@ RSpec.describe 'Hash Exercises' do
       expect(merge_favorites(my_favorites, favorite_movie)).to eq(result)
     end
 
-    xit 'returns a hash with an updated value when there is duplicate' do
+    it 'returns a hash with an updated value when there is duplicate' do
       my_favorites = { color: 'emerald green', movie: 'Avengers: Endgame' }
       favorite_movie = { movie: 'Avengers: Infinity War' }
       result = { color: 'emerald green', movie: 'Avengers: Infinity War' }
       expect(merge_favorites(my_favorites, favorite_movie)).to eq(result)
     end
 
-    xit 'returns a hash with all key/value pairs and an updated value when there is duplicate' do
+    it 'returns a hash with all key/value pairs and an updated value when there is duplicate' do
       my_favorites = { color: 'teal', number: 65 }
       new_favorites = { number: 42, movie: "The Hitchhiker's Guide to the Galaxy" }
       result = { color: 'teal', number: 42, movie: "The Hitchhiker's Guide to the Galaxy" }

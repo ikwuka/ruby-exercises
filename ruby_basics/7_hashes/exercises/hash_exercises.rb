@@ -2,10 +2,15 @@ def create_favorite_hash(color, number)
   # return a hash with the following key/value pairs:
   # key of color (as a symbol) with value of the color argument
   # key of number (as a symbol) with the value of the number argument
+  
 end
+
+create_favorite_hash({color: ["green", "blue"]}, {number: [22, 33, 44]})
+
 
 def favorite_color(favorite_list)
   # return the value of the color key
+  favorite_list.each_key { |k| p k }
 end
 
 def favorite_number(favorite_list)
@@ -36,4 +41,5 @@ end
 
 def merge_favorites(original_list, additional_list)
   # merge the two hashes: original_list and additional_list
+  p original_list.merge(additional_list)
 end
