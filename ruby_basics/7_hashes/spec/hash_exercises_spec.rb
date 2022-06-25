@@ -85,12 +85,12 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite categories exercise' do
 
-    xit 'returns an array of the keys' do
+    it 'returns an array of the keys' do
       my_favorites = { color: 'blue', number: 65, movie: 'Avengers: Endgame' }
       expect(favorite_categories(my_favorites)).to eq([:color, :number, :movie])
     end
 
-    xit 'returns an empty array when hash is empty' do
+    it 'returns an empty array when hash is empty' do
       my_favorites = {}
       expect(favorite_categories(my_favorites)).to eq([])
     end
