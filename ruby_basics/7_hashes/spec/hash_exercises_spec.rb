@@ -98,17 +98,17 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite items exercise' do
 
-    xit 'returns an array with the string and integer values' do
+    it 'returns an array with the string and integer values' do
       my_favorites = { color: 'blue', number: 65, movie: 'Avengers: Endgame' }
       expect(favorite_items(my_favorites)).to eq(['blue', 65, 'Avengers: Endgame'])
     end
 
-    xit 'returns an array with the array and hash values' do
+    it 'returns an array with the array and hash values' do
       my_favorites = { color: ['orange', 'green'], number: { lucky: 7 } }
       expect(favorite_items(my_favorites)).to eq([['orange', 'green'], { lucky: 7 }])
     end
 
-    xit 'returns an empty array when hash is empty' do
+    it 'returns an empty array when hash is empty' do
       my_favorites = {}
       expect(favorite_items(my_favorites)).to eq([])
     end
@@ -116,7 +116,7 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'merge favorites exercise' do
 
-    xit 'returns a hash with all key/value pairs when there is not a duplicate' do
+    it 'returns a hash with all key/value pairs when there is not a duplicate' do
       my_favorites = { color: 'blue', number: 65 }
       favorite_movie = { movie: 'Avengers: Endgame' }
       result = { color: 'blue', number: 65, movie: 'Avengers: Endgame' }
