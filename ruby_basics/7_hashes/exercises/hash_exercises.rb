@@ -2,17 +2,11 @@ def create_favorite_hash(color, number)
   # return a hash with the following key/value pairs:
   # key of color (as a symbol) with value of the color argument
   # key of number (as a symbol) with the value of the number argument
-  color = Hash
-  number = Hash
-
-  p color
-  p number
 end
 
 
 def favorite_color(favorite_list)
   # return the value of the color key
-  favorite_list.each_key { |k| p k }
 end
 
 
@@ -43,7 +37,7 @@ def remove_favorite_number(favorite_list)
   favorite_list.each { |k, v| p favorite_list.delete(:number) if k == :number; p favorite_list }
 
   # Step 2: return the hash (because Step 1 returns the value of the number key)
-  favorite_list
+  # favorite_list
 end
 
 
