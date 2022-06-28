@@ -37,10 +37,13 @@ def remove_favorite_number(favorite_list)
   # end
 
   # ..... or ....
-  favorite_list.each { |k, v| p favorite_list.delete(:number) if k == :number; p favorite_list }
+  # favorite_list.each { |k, v| p favorite_list.delete(:number) if k == :number; p favorite_list }
+
+  # ...............OR.................
+  favorite_list.delete(:number)
 
   # Step 2: return the hash (because Step 1 returns the value of the number key)
-  # favorite_list
+  favorite_list
 end
 
 
