@@ -38,17 +38,17 @@ RSpec.describe 'Hash Exercises' do
 
   describe 'favorite number exercise' do
 
-    xit 'returns an integer' do
+    it 'returns an integer' do
       my_favorites = { color: 'blue', number: 65 }
       expect(favorite_number(my_favorites)).to eq(65)
     end
 
-    xit 'returns a hash' do
+    it 'returns a hash' do
       my_favorites = { color: ['orange', 'green'], number: { lucky: 7 } }
       expect(favorite_number(my_favorites)).to eq({ lucky: 7 })
     end
 
-    xit 'returns the default number when the key is not found' do
+    it 'returns the default number when the key is not found' do
       my_favorites = { color: ['orange', 'green'], movie: 'Avengers: Endgame' }
       expect(favorite_number(my_favorites)).to eq(42)
     end
