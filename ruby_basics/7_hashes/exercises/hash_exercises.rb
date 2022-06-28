@@ -20,7 +20,7 @@ end
 
 def update_favorite_movie(favorite_list, movie)
   # Step 1: add/update the key of movie (as a symbol)
- 
+  favorite_list[:movie] = movie
   # Step 2: return the hash (because Step 1 returns the value of the movie key)
   p favorite_list
 end
