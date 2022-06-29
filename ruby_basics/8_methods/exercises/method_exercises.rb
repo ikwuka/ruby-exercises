@@ -213,12 +213,25 @@ puts ascii_translator(89)             #=> Y
 puts ascii_translator("33")           #=> InputError. Your number must fall within the range (32-127).
 puts ascii_translator(122)            #=> z
 p ascii_translator(127)               #=> " " 
+puts
+
 
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
+
+def common_sports(current_sports, favorite_sports)
+  current_sports.intersection(favorite_sports)
+end
+
+
+p common_sports(%w(soccer baseball tennis), %w[tennis football soccer])               #=> ["soccer", "tennis"]
+p common_sports(%w[wrestling cricket rugby], %w[badminton rugby wrestling])           #=> ["wrestling", "rugby"]
+p common_sports(["lawn-tennis", "javelin"], ["discus", "pole vault", "high jump"])    #=> []
+p common_sports(%w(boxing snowboarding high-jump), ["skating", "boxing"])             #=> ["boxing"]
+
 
 
 # method name: #alphabetical_list

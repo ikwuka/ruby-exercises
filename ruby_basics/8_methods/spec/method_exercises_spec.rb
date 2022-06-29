@@ -21,13 +21,13 @@ RSpec.describe 'Method Exercises' do
 
   describe 'common sports exercise using #intersection' do
 
-    xit 'returns the common sports' do
+    it 'returns the common sports' do
       current = ['tennis', 'football', 'baseball']
       favorite = ['baseball', 'tennis', 'basketball']
       expect(common_sports(current, favorite)).to eq(['tennis', 'baseball'])
     end
 
-    xit 'returns an empty array when there are no common sports' do
+    it 'returns an empty array when there are no common sports' do
       current = ['tennis', 'football', 'wrestling']
       favorite = ['baseball', 'basketball']
       expect(common_sports(current, favorite)).to eq([])
