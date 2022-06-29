@@ -128,7 +128,29 @@ def ascii_translator(number)
     "Y"
   when 90
     "Z"
-  # to be continued...
+  # to make the program shorter, some numbers will be skipped
+  when 117
+    "u"
+  when 118
+    "v"
+  when 119
+    "w"
+  when 120
+    "x"
+  when 121
+    "y"
+  when 122
+    "z"
+  when 123
+    "{"
+  when 124
+    "|"
+  when 125
+    "}"
+  when 126
+    "~"
+  when 127
+    " "
   else
     "InputError. Your number must fall within the range (32-127)."
   end
@@ -138,6 +160,9 @@ puts ascii_translator(34)             #=> "
 puts ascii_translator(60)             #=> <
 puts ascii_translator(89)             #=> Y
 puts ascii_translator("33")           #=> InputError. Your number must fall within the range (32-127).
+puts ascii_translator(122)            #=> z
+p ascii_translator(127)               #=> " " 
+
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
