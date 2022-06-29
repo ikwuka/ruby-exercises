@@ -49,11 +49,11 @@ RSpec.describe 'Method Exercises' do
 
   describe 'lucky number exercise using a default parameter' do
 
-    xit 'returns a string with the provided argument' do
+    it 'returns a string with the provided argument' do
       expect(lucky_number(42)).to eq("Today's lucky number is 42")
     end
 
-    xit 'returns a string with the default parameter' do
+    it 'returns a string with the default parameter' do
       expect(lucky_number).to eq("Today's lucky number is 7")
     end
   end

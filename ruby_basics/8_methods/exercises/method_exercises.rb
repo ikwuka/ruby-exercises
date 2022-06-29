@@ -256,6 +256,16 @@ puts
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
 
+def lucky_number(number = 7)
+  "Today's lucky number is #{number}"
+end
+
+p lucky_number(77)            #=> "Today's lucky number is 77"
+p lucky_number(25)            #=> "Today's lucky number is 25"
+p lucky_number                #=> "Today's lucky number is 7"
+p lucky_number(100)           #=> "Today's lucky number is 100"
+puts
+
 
 # method name: #ascii_code
 # parameter: character (a string)
