@@ -7,6 +7,137 @@
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
 
+def ascii_translator(number)
+  # ASCII printable characters (character code 32-127)
+  case number
+  when 32
+    " "
+  when 33
+    "!"
+  when 34
+    "\""
+  when 35
+    "#"
+  when 36
+    "$"
+  when 37
+    "%"
+  when 38
+    "&"
+  when 39
+    "'"
+  when 40
+    "("
+  when 41
+    ")"
+  when 42
+    "*"
+  when 43
+    "+"
+  when 44
+    "'"
+  when 45
+    "-"
+  when 46
+    "."
+  when 47
+    "/"
+  when 48
+    "0"
+  when 49
+    "1"
+  when 50
+    "2"
+  when 51
+    "3"
+  when 52
+    "4"
+  when 53
+    "5"
+  when 54
+    "6"
+  when 55
+    "7"
+  when 56
+    "8"
+  when 57
+    "9"
+  when 58
+    ":"
+  when 59
+    ";"
+  when 60
+    "<"
+  when 61
+    "="
+  when 62
+    ">"
+  when 63
+    "?"
+  when 64
+    "@"
+  when 65
+    "A"
+  when 66
+    "B"
+  when 67
+    "C"
+  when 68
+    "D"
+  when 69
+    "E"
+  when 70
+    "F"
+  when 71
+    "G"
+  when 72
+    "H"
+  when 73
+    "I"
+  when 74
+    "J"
+  when 75
+    "K"
+  when 76
+    "L"
+  when 77
+    "M"
+  when 78
+    "N"
+  when 79
+    "O"
+  when 80
+    "P"
+  when 81
+    "Q"
+  when 82
+    "R"
+  when 83
+    "S"
+  when 84
+    "T"
+  when 85
+    "U"
+  when 86
+    "V"
+  when 87
+    "W"
+  when 88
+    "X"
+  when 89
+    "Y"
+  when 90
+    "Z"
+  # to be continued...
+  else
+    "InputError. Your number must fall within the range (32-127)."
+  end
+end
+
+puts ascii_translator(34)             #=> "
+puts ascii_translator(60)             #=> <
+puts ascii_translator(89)             #=> Y
+puts ascii_translator("33")           #=> InputError. Your number must fall within the range (32-127).
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
