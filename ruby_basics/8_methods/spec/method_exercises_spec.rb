@@ -60,19 +60,19 @@ RSpec.describe 'Method Exercises' do
 
   describe 'ASCII code exercise using implicit and explicit return' do
 
-    xit 'returns number for uppercase letter' do
+    it 'returns number for uppercase letter' do
       expect(ascii_code('A')).to eq(65)
     end
 
-    xit 'returns number for lowercase letter' do
+    it 'returns number for lowercase letter' do
       expect(ascii_code('z')).to eq(122)
     end
 
-    xit 'returns input error when there is less than one character' do
+    it 'returns input error when there is less than one character' do
       expect(ascii_code('')).to eq('Input Error')
     end
 
-    xit 'returns input error when there is more than one character' do
+    it 'returns input error when there is more than one character' do
       expect(ascii_code('word')).to eq('Input Error')
     end
   end
