@@ -276,8 +276,21 @@ puts
 # hint: use String#ord
 
 def ascii_code(character)
-  
+  if character.length == 1
+    character.ord               # implicit return
+  else
+    return "Input Error"        # explicit return
+  end
 end
+
+p ascii_code("B")               #=> 66
+p ascii_code("+")               #=> 43
+p ascii_code("")                #=> "Input Error"
+p ascii_code("z")               #=> 122
+p ascii_code("what?")           #=> "Input Error"
+puts
+
+
 
 # method name: #pet_pun
 # parameter: animal (a string)
