@@ -128,7 +128,58 @@ def ascii_translator(number)
     "Y"
   when 90
     "Z"
-  # to make the program shorter, some numbers will be skipped
+  when 91
+    "["
+  when 92
+    "\\"
+  when 93
+    "]"
+  when 94
+    "^"
+  when 95
+    "_"
+  when 96
+    "`"
+  when 97
+    "a"
+  when 98
+    "b"
+  when 99
+    "c"
+  when 100
+    "d"
+  when 101
+    "e"
+  when 102
+    "f"
+  when 103
+    "g"
+  when 104
+    "h"
+  when 105
+    "i"
+  when 106
+    "j"
+  when 107
+    "k"
+  when 108
+    "l"
+  when 109
+    "m"
+  when 110
+    "n"
+  when 111
+    "o"
+  when 112
+    "p"
+  when 113
+    "q"
+  when 114
+    "r"
+  when 115
+    "s"
+  when 116
+    "t"
   when 117
     "u"
   when 118
