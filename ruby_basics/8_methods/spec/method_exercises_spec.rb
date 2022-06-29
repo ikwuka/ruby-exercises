@@ -79,39 +79,39 @@ RSpec.describe 'Method Exercises' do
 
   describe 'pet pun exercise using console output' do
 
-    xit 'returns nil' do
+    it 'returns nil' do
       allow($stdout).to receive(:puts).with("Cats are purr-fect!")
       expect(pet_pun('cat')).to be nil
     end
 
-    xit 'outputs the cat pun' do
+    it 'outputs the cat pun' do
       expect { pet_pun('cat') }.to output("Cats are purr-fect!\n").to_stdout
     end
 
-    xit 'outputs the dog pun' do
+    it 'outputs the dog pun' do
       expect { pet_pun('dog') }.to output("Dogs are paw-some!\n").to_stdout
     end
 
-    xit 'outputs the default pet pun' do
+    it 'outputs the default pet pun' do
       expect { pet_pun('rabbit') }.to output("I think rabbits have pet-tential!\n").to_stdout
     end
   end
 
   describe 'twenty-first century predicate exercise' do
 
-    xit 'returns true when the year is between 2001 - 2100' do
+    it 'returns true when the year is between 2001 - 2100' do
       expect(twenty_first_century?(2024)).to be true
     end
 
-    xit 'returns true when the year is 2001' do
+    it 'returns true when the year is 2001' do
       expect(twenty_first_century?(2001)).to be true
     end
 
-    xit 'returns true when the year is 2100' do
+    it 'returns true when the year is 2100' do
       expect(twenty_first_century?(2100)).to be true
     end
 
-    xit 'returns false when the year is not between 2001 - 2100' do
+    it 'returns false when the year is not between 2001 - 2100' do
       expect(twenty_first_century?(1999)).to be false
     end
   end

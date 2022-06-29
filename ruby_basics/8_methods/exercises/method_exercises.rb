@@ -217,7 +217,6 @@ p ascii_translator(127)               #=> " "
 puts
 
 
-
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
@@ -235,7 +234,6 @@ p common_sports(%w(boxing snowboarding high-jump), ["skating", "boxing"])       
 puts
 
 
-
 # method name: #alphabetical_list
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
@@ -245,12 +243,12 @@ def alphabetical_list(games)
   games.sort.uniq!      # chaining methods
 end
 
+
 p alphabetical_list(%w(DLS RF DLS GOT))                         #=> ["DLS", "GOT", "RF"]
 p alphabetical_list(["tennis master", "TR", "romeo", "TR"])     #=> ["TR", "romeo", "tennis master"]
 p alphabetical_list(%w(ogene igba udu igba))                    #=> ["igba", "ogene", "udu"]
 p alphabetical_list(%w[stars-walls wall-breakers wall-])        #=> nil
 puts
-
 
 
 # method name: #lucky_number
@@ -261,12 +259,12 @@ def lucky_number(number = 7)
   "Today's lucky number is #{number}"
 end
 
+
 p lucky_number(77)            #=> "Today's lucky number is 77"
 p lucky_number(25)            #=> "Today's lucky number is 25"
 p lucky_number                #=> "Today's lucky number is 7"
 p lucky_number(100)           #=> "Today's lucky number is 100"
 puts
-
 
 
 # method name: #ascii_code
@@ -283,13 +281,13 @@ def ascii_code(character)
   end
 end
 
+
 p ascii_code("B")               #=> 66
 p ascii_code("+")               #=> 43
 p ascii_code("")                #=> "Input Error"
 p ascii_code("z")               #=> 122
 p ascii_code("what?")           #=> "Input Error"
 puts
-
 
 
 # method name: #pet_pun
@@ -300,9 +298,39 @@ puts
 # console output: otherwise, "I think <animal>s have pet-tential!" (potential)
 # hint: use puts
 
+def pet_pun(animal)
+  if animal == "cat"
+    puts "Cats are purr-fect!"
+  elsif animal == "dog"
+    puts "Dogs are paw-some!"
+  else
+    puts "I think #{animal}s have pet-tential!"
+  end
+end
+
+
+pet_pun("dog")                #=> Dogs are paw-some!
+pet_pun("parrot")             #=> I think parrots have pet-tential!
+pet_pun("cat")                #=> Cats are purr-fect!
+pet_pun("mice")               #=> I think mices have pet-tential!
+puts
+
 
 # method name: #twenty_first_century?
 # parameter: year (an integer)
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 
+def twenty_first_century?(year)
+  if year.between?(2001, 2100)
+    true
+  else
+    false
+  end
+end
+
+
+twenty_first_century?(2003)           #=> true
+twenty_first_century?(1870)           #=> false
+twenty_first_century?(1998)           #=> false
+twenty_first_century?(2099)           #=> true
