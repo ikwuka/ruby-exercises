@@ -36,12 +36,12 @@ RSpec.describe 'Method Exercises' do
 
   describe 'alphabetical list exercise using #sort and #uniq chained' do
 
-    xit 'returns an sorted array removing one duplicate' do
+    it 'returns an sorted array removing one duplicate' do
       games = ['Chess', 'Scrabble', 'Othello', 'Chess']
       expect(alphabetical_list(games)).to eq(['Chess', 'Othello', 'Scrabble'])
     end
     
-    xit 'returns an sorted array removing multiple duplicates' do
+    it 'returns an sorted array removing multiple duplicates' do
       games = ['Monopoly', 'Checkers', 'Risk', 'Checkers', 'Risk', 'Checkers']
       expect(alphabetical_list(games)).to eq(['Checkers', 'Monopoly', 'Risk'])
     end

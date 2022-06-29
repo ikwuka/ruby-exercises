@@ -231,6 +231,7 @@ p common_sports(%w(soccer baseball tennis), %w[tennis football soccer])         
 p common_sports(%w[wrestling cricket rugby], %w[badminton rugby wrestling])           #=> ["wrestling", "rugby"]
 p common_sports(["lawn-tennis", "javelin"], ["discus", "pole vault", "high jump"])    #=> []
 p common_sports(%w(boxing snowboarding high-jump), ["skating", "boxing"])             #=> ["boxing"]
+puts
 
 
 
@@ -238,6 +239,17 @@ p common_sports(%w(boxing snowboarding high-jump), ["skating", "boxing"])       
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#sort and Array#uniq together
+
+def alphabetical_list(games)
+  games.sort.uniq!      # chaining methods
+end
+
+p alphabetical_list(%w(DLS RF DLS GOT))                         #=> ["DLS", "GOT", "RF"]
+p alphabetical_list(["tennis master", "TR", "romeo", "TR"])     #=> ["TR", "romeo", "tennis master"]
+p alphabetical_list(%w(ogene igba udu igba))                    #=> ["igba", "ogene", "udu"]
+p alphabetical_list(%w[stars-walls wall-breakers wall-])        #=> nil
+puts
+
 
 
 # method name: #lucky_number
