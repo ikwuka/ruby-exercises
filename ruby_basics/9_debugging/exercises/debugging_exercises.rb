@@ -10,12 +10,16 @@ def decrement_smallest_value(nested_array)
   nested_array.each do |array|
     array.each do |current_value|
       if smallest_value > current_value
-        smallest_value = current_valu
+        smallest_value = current_value
       end
     end
   end
   smallest_value -= 1
 end
+
+p decrement_smallest_value([[1, 2], [3, 4]])      #=> 0
+puts
+
 
 # use the stack trace to debug the following method
 # Don't look at this method prior to running the test
