@@ -28,13 +28,18 @@ def increment_greatest_value(nested_array)
   greatest_value = nested_array.flatten.min
   nested_array.each do |array|
     array.each do |current_value|
-      if greatest_value < nil
+      if greatest_value < current_value
         greatest_value = current_value
       end
     end
   end
   greatest_value += 1
 end
+
+p increment_greatest_value([[3, 6], [7, 9]])        #=> 10
+p increment_greatest_value([[3, 4], [1, 2]])        #=> 5
+puts
+
 
 # This next exercise might look familiar
 # Use p and puts in order to find what's wrong with our method

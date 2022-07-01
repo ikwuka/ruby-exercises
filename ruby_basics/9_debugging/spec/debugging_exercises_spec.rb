@@ -17,7 +17,7 @@ RSpec.describe 'Debugging Exercises' do
   describe 'increment_greatest_value' do
 
     # remove the 'x' from the line below to unskip the test
-    xit 'Returns 5 after you use the stack trace to find and fix the error' do
+    it 'Returns 5 after you use the stack trace to find and fix the error' do
       nested_array = [[3, 4], [1, 2]]
 
       greatest_value_incremented = increment_greatest_value(nested_array)
