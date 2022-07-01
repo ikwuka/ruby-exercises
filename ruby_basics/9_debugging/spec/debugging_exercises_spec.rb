@@ -29,7 +29,7 @@ RSpec.describe 'Debugging Exercises' do
   describe 'isogram' do
 
     # remove the 'x' from the line below to unskip the test
-    xit 'Returns true after you use puts to fix the method, since Odin is an isogram' do
+    it 'Returns true after you use puts to fix the method, since Odin is an isogram' do
 
       expect(isogram?("Odin")).to be true
     end
