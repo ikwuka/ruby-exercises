@@ -38,7 +38,7 @@ RSpec.describe 'Debugging Exercises' do
   describe 'yell_greeting' do
 
     # remove the 'x' from the line below to unskip the test
-    xit 'Returns "WASSAP, BOB!" after you use pry-byebug to fix the method' do
+    it 'Returns "WASSAP, BOB!" after you use pry-byebug to fix the method' do
 
       expect(yell_greeting("Bob")).to eq("WASSAP, BOB!")
     end

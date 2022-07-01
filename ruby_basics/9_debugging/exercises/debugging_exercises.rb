@@ -63,8 +63,17 @@ puts
 # Next insert plenty of breakpoints, and see if you can tell where things break
 # Once you find the error, fix it and get the test to pass
 
+require "pry-byebug"
+
 def yell_greeting(string)
   name = string
+  binding.pry
+
   name = name.downcase
+  binding.pry
+
   greeting = "WASSAP, #{name}!"
 end
+
+p yell_greeting("Ngozika")
+p yell_greeting("Chidimma")
