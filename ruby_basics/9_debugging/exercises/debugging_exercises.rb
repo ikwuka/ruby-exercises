@@ -68,11 +68,10 @@ require "pry-byebug"
 def yell_greeting(string)
   name = string
 
-  name = name.downcase
-  binding.pry
+  name = name.upcase
 
   greeting = "WASSAP, #{name}!"
 end
 
-p yell_greeting("Ngozika")
-p yell_greeting("Chidimma")
+p yell_greeting("Ngozika")        #=> "WASSAP, NGOZIKA!"
+p yell_greeting("Chidimma")       #=> "WASSAP, CHIDIMMA!"
