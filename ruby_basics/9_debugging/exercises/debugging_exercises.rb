@@ -51,7 +51,8 @@ def isogram?(string)
   original_length == unique_length
 end
 
-p isogram?("Python")
+p isogram?("Python")        #=> true
+p isogram?("Odin")          #=> true
 puts
 
 
