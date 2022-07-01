@@ -67,7 +67,6 @@ require "pry-byebug"
 
 def yell_greeting(string)
   name = string
-  binding.pry
 
   name = name.downcase
   binding.pry
